@@ -51,7 +51,7 @@ I recommend creating a folder in your ~/Downloads, called ~/Downloads/.src for a
 
 Now, clone lut's repository and then run make:
 
-    git clone https://github.com/Matthew-Tate-Scarbrough/lut.git ~/Downloads/.src/cmd-bibles/lut
+    git clone https://github.com/Matthew-Tate-Scarbrough/kjva/tree/lut.git ~/Downloads/.src/cmd-bibles/lut
     cd ~/Downloads/.src/cmd-bibles/lut
     sudo make install
 
