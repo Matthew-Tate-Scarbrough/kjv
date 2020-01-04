@@ -18,7 +18,7 @@ fi
 
 show_help() {
 	exec >&2
-	echo "NOTE: I added parentheses around "allein" in Röm. 3:28"
+	echo "NOTE: I added parentheses around \"allein\" in Röm. 3:28"
 	echo "usage: $(basename "$0") [flags] [reference...]"
 	echo
 	echo "  -l      list books"
