@@ -1,24 +1,24 @@
 PREFIX = /usr/local
 
-kjva: kjva.sh kjva.awk kjva.tsv
-	cat kjva.sh > $@
+lut: lut.sh lut.awk lut.tsv
+	cat lut.sh > $@
 	echo 'exit 0' >> $@
 	echo '#EOF' >> $@
-	tar cz kjva.awk kjva.tsv >> $@
+	tar cz lut.awk lut.tsv >> $@
 	chmod +x $@
 
-test: kjva.sh
-	shellcheck -s sh kjva.sh
+test: lut.sh
+	shellcheck -s sh lut.sh
 
 clean:
-	rm -f kjva
+	rm -f lut
 
-install: kjva
+install: lut
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
-	cp -f kjva $(DESTDIR)$(PREFIX)/bin
-	chmod 755 $(DESTDIR)$(PREFIX)/bin/kjva
+	cp -f lut $(DESTDIR)$(PREFIX)/bin
+	chmod 755 $(DESTDIR)$(PREFIX)/bin/lut
 
 uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/bin/kjva
+	rm -f $(DESTDIR)$(PREFIX)/bin/lut
 
 .PHONY: test clean install uninstall

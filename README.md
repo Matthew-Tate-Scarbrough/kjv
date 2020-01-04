@@ -1,14 +1,20 @@
-# kjva
+# lut
 
-Read the Word of God + the Apocrypha from your terminal!
+Read the Word of God in your terminal!
 
-Forked from [https://github.com/LukeSmithxyz/kjv.git](https://github.com/LukeSmithxyz/kjv.git), which is forked from [https://github.com/bontibon/kjv.git](https://github.com/bontibon/kjv.git) but with the Apocrypha added.
+Forked from [https://github.com/LukeSmithxyz/kjv.git](https://github.com/LukeSmithxyz/kjv.git), which is forked from [https://github.com/bontibon/kjv.git](https://github.com/bontibon/kjv.git).
 
-Smith added the apocrypha and made a better Makefile, however, I have rebranded it as "kjva," meaning kjv+apocyrpha, to avoid confusion with the original by bontibon, and have added a "-w" option, over the "-W."
+This is the Luther 1545 Bible as accurately as I may do it; any issues are to be assumed not on my part content-wise.
+
+In terms of original material, it is wholly unmodified, but I did capitalise all instances of *der Herr* in the Old Testament to *der HERR*, irrespective of the Hebrew word, so do not assume that all instnaces of *der HERR* are 1:1 with YHWH in the Hebrew--the *.pdf* that I found, unfortunatelly, used *der GOtt* and *der HErr* (an issue on their part.) As you read, PLEASE feel free to jot down the corrections, edit the *.tsv* in your source code directory and request a modification here on Github.
+
+In Romans 3:28, Martin Luther controversially added the word *allein*; while I do understand why he did this, and I don't disagree with it in context of the New Testament, nevertheless, it is untrue to both the Majority and Minority texts and so I added parentheses around it.
+
+Technically, I added a "-w" option, over the "-W."
 
 ## Usage
 
-    usage: ./kjva [flags] [reference...]
+    usage: ./lut [flags] [reference...]
 
       -l      list books
       -w      no line wrap
@@ -43,10 +49,10 @@ I recommend creating a folder in your ~/Downloads, called ~/Downloads/.src for a
     mkdir ~/Downloads/.src
     mkdir ~/Downloads/.src/cmd-bibles
 
-Now, clone kjva's repository and then run make:
+Now, clone lut's repository and then run make:
 
-    git clone https://github.com/Matthew-Tate-Scarbrough/kjva.git ~/Downloads/.src/cmd-bibles/kjva
-    cd ~/Downloads/.src/cmd-bibles/kjva
+    git clone https://github.com/Matthew-Tate-Scarbrough/lut.git ~/Downloads/.src/cmd-bibles/lut
+    cd ~/Downloads/.src/cmd-bibles/lut
     sudo make install
 
 ## License
